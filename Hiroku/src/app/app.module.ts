@@ -1,3 +1,5 @@
+import { AuthService } from './auth.service';
+import { MyAuthService } from './my-auth.service';
 import { DataService } from './data.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -26,7 +28,7 @@ import {FormsModule} from '@angular/forms'
     FormsModule,
     HttpClientModule
   ],
-  providers: [MyServiceService,DataService],
+  providers: [MyServiceService,DataService,MyAuthService,AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
